@@ -1,0 +1,14 @@
+~/bin/sh
+xrandr --output HDMI-0 --auto --dpi 75
+xrandr --output DP-0 --auto --below HDMI-0 --dpi 75 --primary
+xrandr --output DP-2 --auto --right-of HDMI-0 --dpi 75
+killall compton
+compton --config ~/.config/compton.conf -C &
+killall feh
+feh --bg-scale --no-xinerama $1 --no-fehbg
+killall nm-applet
+nm-applet
+killall blueman-applet
+blueman-applet
+killall polybar
+/home/steve/.i3/polybar.sh &
