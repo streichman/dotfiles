@@ -1,0 +1,4 @@
+#/bin/sh
+xdotool search --onlyvisible --name fuzzyMenu windowunmap \
+	|| xdotool search --name fuzzyMenu windowmap \
+	|| gnome-terminal --class fuzzyMenu --title="fuzzyMenu" -e $1

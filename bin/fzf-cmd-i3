@@ -1,0 +1,2 @@
+#/bin/sh
+compgen -c | ~/.fzf/bin/fzf --border | xargs -r i3-msg -t command exec
