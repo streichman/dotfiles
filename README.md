@@ -5,3 +5,4 @@ dot-config/i3/config - i3 WM Configuration<br/>
 dot-config/nvim/init.vim - Nvim config (probably a mess)<br/>
 dot-config/polybar/config - Polybar (i3-bar replacement) specific configs.<br/>
 dot-config/compton.conf - Compton config (definitely is a mess, but works)<br/>
+dot-config/rofi/config - Rofi menu configuration file
