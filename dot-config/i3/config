@@ -90,7 +90,9 @@ mode "$alt_shift_mode" {
 bindsym $mod+Delete mode "$mode_system"
 
 # start dmenu (a program launcher)
-bindsym $mod+d exec /home/steve/bin/fzf-menu-i3
+bindsym $mod+d exec rofi -show drun
+bindsym $mod+Tab exec rofi -show windowcd
+# bindsym $mod+d exec /home/steve/bin/fzf-menu-i3
 bindsym $mod+Shift+b exec google-chrome-stable
 bindsym $mod+t exec thunar
 # There also is the (new) i3-dmenu-desktop which only displays applications
